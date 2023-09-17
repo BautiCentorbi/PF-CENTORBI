@@ -28,11 +28,12 @@
     font-size: 36px;
 }
 .cv-btn button {
+    @include botones (#fff, #000, 14px, solid, #fff);
     width: max-content;
     padding: 10px 20px;
-    font-size: 14px;
 }
 .about-btn button {
+    @include botones ($bg-color, $secondary-button-border, 14px, solid, $secondary-button-border);
     width: max-content;
 }
 .cv-btn button {
