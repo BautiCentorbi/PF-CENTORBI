@@ -1,0 +1,2 @@
+# Ignorar .vscode (Settings.json)
+/.vscode
