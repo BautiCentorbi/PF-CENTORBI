@@ -53,38 +53,13 @@
     margin: auto;
     flex-wrap: wrap;
         h2 {
-            font-family: "Fragment";
-            color: #fff;
-            font-size: 32px;
-            font-weight: bold;
             margin: none;
-                span {
-                    color: $primary-color;
-                    font-family: "Fragment";
-                    font-style: italic;
-                    align-items: center;
-                }
         }
 }
 #projects-container {
     margin: auto;
     padding: 0;
     display: flex !important;
-        img {
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-        a div {
-            display: block;
-            text-align: center;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            font-weight: bold;
-            text-decoration: none;
-            color: $bg-color;
-            transition: all 0.3s ease
-        }
 }
 #a-link-projects {
     display: flex;
@@ -93,9 +68,6 @@
             width: 260px;
             justify-content: center;
             padding: 20px 0;
-                &:hover{
-                    filter: brightness(0.7);
-                }
         }
 }
 
@@ -136,20 +108,13 @@
 /* About Page */
 
 #about {
-    color: #ffffff;
-    display: flex;
     padding: 1rem 1rem;
-    align-items: center;
 }
 #descripciones-about {
     padding: 20px;
     font-size: 1rem;
-    font-weight: 200;
         span {
-            color: $primary-color;
             font-size: 2rem;
-            font-weight: 1200;
-            font-family: "Fragment"; 
         }
 }
 .education-btn button {
@@ -170,7 +135,7 @@
 
 /* Sección Izquierda */
 
-#aptitudes  {
+#aptitudes-container  {
     margin: 40px 20px;
     padding: 20px;
     background-color: $ligth-grey;
@@ -207,37 +172,10 @@
 /* Sección Derecha */
 
 #habilidades-container {
-    margin: 40px 20px;
-    padding: 20px;
-    background-color: $ligth-grey;
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgb(22, 25, 27);
-    width: fit-content;
-        h2{
-            font-size: 32px;
-            font-family: "Fragment";
-            font-weight: bold;
-            margin-bottom: 40px;
-            text-align: center;
-                span {
-                    color: $primary-color;
-                    font-family: "Fragment";
-                    font-style: italic;
-                }
-        }
+    @extend #aptitudes-container;
 }
 .habilidades-ul {
-    padding: 0 10px;
-        ul li {
-            padding: 10px 0px;
-            font-size: 20px;
-                i {
-                    margin-right: 20px;
-                    font-size: 24px;
-                    width: 29px;
-                    text-align: center;
-                }
-        }
+    @extend .aptitudes-ul;
 }
 
 /* About-Educación */
@@ -281,29 +219,23 @@
                 }
         }
 }
-#psp-illustrator {
+@mixin certificates {
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
     border-top: 1px solid $cards-color;
+}
+#psp-illustrator {
+    @include certificates;
 }
 #uxui {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 20px;
-    border-top: 1px solid $cards-color;
+    @include certificates;
 }
 #uxui-avanzado {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 20px;
-    border-top: 1px solid $cards-color;
+    @include certificates;
 }
 #webd{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 20px;
-    border-top: 1px solid $cards-color;
+    @include certificates;
 }
 
 // Contacto

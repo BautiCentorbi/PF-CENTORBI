@@ -143,7 +143,7 @@ main a {
   background-color: #fff;
   display: inline;
   font-weight: bold;
-  color: #000000;
+  color: #000;
   border-style: solid;
   border-color: #fff;
   transition: all 300ms ease;
@@ -222,7 +222,7 @@ main a {
   text-align: center;
   background-color: #fff;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 16px;
   font-weight: bold;
   text-decoration: none;
   color: #212427;
@@ -490,21 +490,20 @@ main a {
 }
 
 .education-btn button {
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 10px 24px;
   font-size: 1rem;
   border-radius: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #212427;
+  background-color: #fff;
   display: inline;
   font-weight: bold;
-  color: #9d9d9d;
+  color: #000;
   border-style: solid;
-  border-color: #9d9d9d;
+  border-color: #fff;
   transition: all 300ms ease;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 .education-btn button:hover {
   background-color: #212427;
@@ -521,16 +520,16 @@ main a {
   border-radius: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: #212427;
   display: inline;
   font-weight: bold;
-  color: #000000;
+  color: #9d9d9d;
   border-style: solid;
-  border-color: #fff;
+  border-color: #9d9d9d;
   transition: all 300ms ease;
   cursor: pointer;
 }
-.contact-btn button :hover {
+.contact-btn button:hover {
   background-color: #212427;
   color: #fff;
   border-style: solid;
@@ -557,7 +556,7 @@ main a {
 }
 
 /* Sección Izquierda */
-#aptitudes {
+#aptitudes-container, #habilidades-container {
   display: inline-block;
   padding: 50px;
   background-color: #333538;
@@ -565,28 +564,28 @@ main a {
   box-shadow: 0 0 20px rgb(22, 25, 27);
   width: 720px;
 }
-#aptitudes h2 {
+#aptitudes-container h2, #habilidades-container h2 {
   font-size: 46px;
   font-family: "Fragment";
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
 }
-#aptitudes h2 span {
+#aptitudes-container h2 span, #habilidades-container h2 span {
   color: #1cbfdf;
   font-family: "Fragment";
   font-style: italic;
 }
 
-.aptitudes-ul {
+.aptitudes-ul, .habilidades-ul {
   display: flex;
   padding: 0 30px;
 }
-.aptitudes-ul ul li {
+.aptitudes-ul ul li, .habilidades-ul ul li {
   padding: 10px;
   font-size: 28px;
 }
-.aptitudes-ul ul li i {
+.aptitudes-ul ul li i, .habilidades-ul ul li i {
   margin-right: 40px;
   font-size: 28px;
   width: 29px;
@@ -594,42 +593,6 @@ main a {
 }
 
 /* Sección Derecha */
-#habilidades-container {
-  display: inline-block;
-  padding: 50px;
-  background-color: #333538;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgb(22, 25, 27);
-  width: 720px;
-}
-#habilidades-container h2 {
-  font-size: 46px;
-  font-family: "Fragment";
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-}
-#habilidades-container h2 span {
-  color: #1cbfdf;
-  font-family: "Fragment";
-  font-style: italic;
-}
-
-.habilidades-ul {
-  display: flex;
-  padding: 0 30px;
-}
-.habilidades-ul ul li {
-  padding: 10px;
-  font-size: 28px;
-}
-.habilidades-ul ul li i {
-  margin-right: 40px;
-  font-size: 28px;
-  width: 29px;
-  text-align: center;
-}
-
 /* About-Educación */
 .education-section {
   max-width: 1500px;
@@ -1143,14 +1106,14 @@ main a {
     font-family: "Fragment";
     font-style: italic;
   }
-  .aptitudes-ul {
+  .aptitudes-ul, .habilidades-ul {
     padding: 0 10px;
   }
-  .aptitudes-ul ul li {
+  .aptitudes-ul ul li, .habilidades-ul ul li {
     padding: 10px 0px;
     font-size: 20px;
   }
-  .aptitudes-ul ul li i {
+  .aptitudes-ul ul li i, .habilidades-ul ul li i {
     margin-right: 20px;
     font-size: 24px;
     width: 29px;
@@ -1308,37 +1271,12 @@ main a {
     flex-wrap: wrap;
   }
   #projects-info-container h2 {
-    font-family: "Fragment";
-    color: #fff;
-    font-size: 32px;
-    font-weight: bold;
     margin: none;
-  }
-  #projects-info-container h2 span {
-    color: #1cbfdf;
-    font-family: "Fragment";
-    font-style: italic;
-    align-items: center;
   }
   #projects-container {
     margin: auto;
     padding: 0;
     display: flex !important;
-  }
-  #projects-container img {
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  #projects-container a div {
-    display: block;
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #212427;
-    transition: all 0.3s ease;
   }
   #a-link-projects {
     display: flex;
@@ -1348,9 +1286,6 @@ main a {
     width: 260px;
     justify-content: center;
     padding: 20px 0;
-  }
-  #a-link-projects img:hover {
-    filter: brightness(0.7);
   }
   #main-nav a:hover {
     transition: all 300ms ease;
@@ -1380,21 +1315,14 @@ main a {
   }
   /* About Page */
   #about {
-    color: #ffffff;
-    display: flex;
     padding: 1rem 1rem;
-    align-items: center;
   }
   #descripciones-about {
     padding: 20px;
     font-size: 1rem;
-    font-weight: 200;
   }
   #descripciones-about span {
-    color: #1cbfdf;
     font-size: 2rem;
-    font-weight: 1200;
-    font-family: "Fragment";
   }
   .education-btn button {
     width: max-content;
@@ -1412,7 +1340,7 @@ main a {
     padding-bottom: 40px;
   }
   /* Sección Izquierda */
-  #aptitudes {
+  #aptitudes-container, #habilidades-container {
     margin: 40px 20px;
     padding: 20px;
     background-color: #333538;
@@ -1420,65 +1348,32 @@ main a {
     box-shadow: 0 0 20px rgb(22, 25, 27);
     width: fit-content;
   }
-  #aptitudes h2 {
+  #aptitudes-container h2, #habilidades-container h2 {
     font-size: 32px;
     font-family: "Fragment";
     font-weight: bold;
     margin-bottom: 40px;
     text-align: center;
   }
-  #aptitudes h2 span {
+  #aptitudes-container h2 span, #habilidades-container h2 span {
     color: #1cbfdf;
     font-family: "Fragment";
     font-style: italic;
   }
-  .aptitudes-ul {
+  .aptitudes-ul, .habilidades-ul {
     padding: 0 10px;
   }
-  .aptitudes-ul ul li {
+  .aptitudes-ul ul li, .habilidades-ul ul li {
     padding: 10px 0px;
     font-size: 20px;
   }
-  .aptitudes-ul ul li i {
+  .aptitudes-ul ul li i, .habilidades-ul ul li i {
     margin-right: 20px;
     font-size: 24px;
     width: 29px;
     text-align: center;
   }
   /* Sección Derecha */
-  #habilidades-container {
-    margin: 40px 20px;
-    padding: 20px;
-    background-color: #333538;
-    border-radius: 16px;
-    box-shadow: 0 0 20px rgb(22, 25, 27);
-    width: fit-content;
-  }
-  #habilidades-container h2 {
-    font-size: 32px;
-    font-family: "Fragment";
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  #habilidades-container h2 span {
-    color: #1cbfdf;
-    font-family: "Fragment";
-    font-style: italic;
-  }
-  .habilidades-ul {
-    padding: 0 10px;
-  }
-  .habilidades-ul ul li {
-    padding: 10px 0px;
-    font-size: 20px;
-  }
-  .habilidades-ul ul li i {
-    margin-right: 20px;
-    font-size: 24px;
-    width: 29px;
-    text-align: center;
-  }
   /* About-Educación */
   #education-section {
     padding: 20px 0;
