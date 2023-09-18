@@ -167,15 +167,18 @@ main a{
     margin: auto;
     padding-bottom: 40px;
 }
+@mixin enhaced-title ($text-color, $font-size){
+    font-family: "Fragment";
+    color: $text-color;
+    font-size: $font-size;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 #projects-info-container {
     width: 100%;
-        h2 {
-            font-family: "Fragment";
-            color: #fff;
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+        h2 {    
+            @include enhaced-title(#fff, 32px);
+        }    
         span {
             color: $primary-color;
             font-family: "Fragment";
@@ -226,6 +229,7 @@ main a{
         height: 800px;
     }
 }
+
 #last-project-container {
     text-align: center;
     padding: 40px 0;
@@ -238,7 +242,31 @@ main a{
                     font-family: "Fragment";
                 }  
         }
+        #behance-qr {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: left !important;
+            h2 {
+                @include enhaced-title(#fff, 32px);
+            span {
+                color: $primary-color;
+                font-family: "Fragment";
+                font-style: italic;
+            }
+            }
+        }
 }
+.behance-btn button {
+    @include botones(#fff, #000, 1rem, solid, #fff);
+        &:hover {
+            background-color: $bg-color;
+            color: #fff;
+            border-style: solid;
+            border-color: #fff;
+            font-weight: 900;
+        }   
+}
+
 /* Footer */
 
 #footer {

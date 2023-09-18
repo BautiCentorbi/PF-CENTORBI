@@ -118,6 +118,37 @@
         height: 800px;
     }
 }
+#last-project-container {
+    padding: 40px 0;
+    width: 100%;
+    margin: auto;
+        h1 {
+            font-size: 48px;
+            padding: 20px 0;
+        }
+        #behance-qr {
+            margin: 40px auto;
+            padding: 0;
+            width: 100%;
+            justify-content: center !important;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            h3 {
+                font-size: 24px;
+                color: #f4f4f4;
+            }
+        }
+}
+.behance-btn button {
+    font-size: 18px;
+    width: 100%;
+}
+
 
 // About Page
 
@@ -145,7 +176,6 @@
 }
 .contact-btn {
     button {
-    width: max-content;
     width: 100%;
     font-size: 18px;
     }

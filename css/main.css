@@ -261,6 +261,47 @@ main a {
   color: #1cbfdf;
   font-family: "Fragment";
 }
+#last-project-container #behance-qr {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: left !important;
+}
+#last-project-container #behance-qr h2 {
+  font-family: "Fragment";
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#last-project-container #behance-qr h2 span {
+  color: #1cbfdf;
+  font-family: "Fragment";
+  font-style: italic;
+}
+
+.behance-btn button {
+  margin-top: 10px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  border-radius: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  display: inline;
+  font-weight: bold;
+  color: #000;
+  border-style: solid;
+  border-color: #fff;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.behance-btn button:hover {
+  background-color: #212427;
+  color: #fff;
+  border-style: solid;
+  border-color: #fff;
+  font-weight: 900;
+}
 
 /* Footer */
 #footer {
@@ -1056,6 +1097,36 @@ main a {
     width: 360px;
     height: 800px;
   }
+  #last-project-container {
+    padding: 40px 0;
+    width: 100%;
+    margin: auto;
+  }
+  #last-project-container h1 {
+    font-size: 48px;
+    padding: 20px 0;
+  }
+  #last-project-container #behance-qr {
+    margin: 40px auto;
+    padding: 0;
+    width: 100%;
+    justify-content: center !important;
+  }
+  #last-project-container #behance-qr img {
+    width: 300px;
+    height: 300px;
+  }
+  #last-project-container #behance-qr h2 {
+    font-size: 28px;
+  }
+  #last-project-container #behance-qr h3 {
+    font-size: 24px;
+    color: #f4f4f4;
+  }
+  .behance-btn button {
+    font-size: 18px;
+    width: 100%;
+  }
   #about {
     padding: 1rem 1rem;
   }
@@ -1077,7 +1148,6 @@ main a {
     width: 100%;
   }
   .contact-btn button {
-    width: max-content;
     width: 100%;
     font-size: 18px;
   }
@@ -1510,9 +1580,44 @@ main a {
     font-size: 14px;
     width: 100%;
   }
+  #last-project {
+    width: 100%;
+  }
   #last-project #figma-prototype {
     width: 222px;
     height: 494px;
+  }
+  #last-project-container {
+    padding: 40px 0;
+    width: 100%;
+    margin: auto;
+  }
+  #last-project-container h1 {
+    font-size: 28px;
+    padding: 20px 0;
+  }
+  #last-project-container #behance-qr {
+    margin: 40px auto;
+    padding: 0;
+  }
+  #last-project-container #behance-qr #qr-container {
+    justify-content: center !important;
+  }
+  #last-project-container #behance-qr img {
+    width: 240px;
+    height: 240px;
+  }
+  #last-project-container #behance-qr h2 {
+    font-size: 24px;
+  }
+  #last-project-container #behance-qr h3 {
+    font-size: 18px;
+    color: #f4f4f4;
+    margin-bottom: 24px;
+  }
+  .behance-btn button {
+    font-size: 14px;
+    width: 100%;
   }
   .about-main {
     padding: 32px;
