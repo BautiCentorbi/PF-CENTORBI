@@ -116,7 +116,7 @@ main a {
   overflow: hidden;
   border-right: 0.15em solid #fff;
   white-space: nowrap;
-  animation: typing 4s steps(20, end), blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
 }
 #descripciones span {
   color: #1cbfdf;
@@ -558,7 +558,7 @@ main a {
   overflow: hidden;
   border-right: 0.15em solid #fff;
   white-space: nowrap;
-  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 #descripciones-about span {
   color: #1cbfdf;
@@ -754,7 +754,6 @@ main a {
   display: flex !important;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
   margin: 0;
   padding: 30px 20px;
   border-top: 1px solid #535456;
@@ -774,7 +773,7 @@ main a {
   width: max-content;
   text-align: right;
 }
-.experience-container .right-experience h3 {
+.experience-container .right-experience h4 {
   font-size: 24px;
 }
 .experience-container .right-experience a {
@@ -955,22 +954,22 @@ main a {
     justify-content: space-around;
     margin: 0 20px;
   }
-  #aptitudes {
+  #aptitudes-container, #habilidades-container {
     padding: 20px;
     width: 450px;
   }
-  #aptitudes h2 {
+  #aptitudes-container h2, #habilidades-container h2 {
     font-size: 36px;
     margin-bottom: 32px;
   }
-  #aptitudes ul {
+  #aptitudes-container ul, #habilidades-container ul {
     padding: 0 30px;
   }
-  #aptitudes ul li {
+  #aptitudes-container ul li, #habilidades-container ul li {
     padding: 10px;
     font-size: 24px;
   }
-  #aptitudes ul li i {
+  #aptitudes-container ul li i, #habilidades-container ul li i {
     font-size: 24px;
     line-height: 24px;
     width: 24px;
@@ -1248,7 +1247,7 @@ main a {
     padding-bottom: 40px;
   }
   /* Sección Izquierda */
-  #aptitudes {
+  #aptitudes-container, #habilidades-container {
     margin: 40px auto;
     padding: 24px;
     background-color: #333538;
@@ -1256,14 +1255,14 @@ main a {
     box-shadow: 0 0 20px rgb(22, 25, 27);
     width: 500px;
   }
-  #aptitudes h2 {
+  #aptitudes-container h2, #habilidades-container h2 {
     font-size: 32px;
     font-family: "Fragment";
     font-weight: bold;
     margin-bottom: 40px;
     text-align: center;
   }
-  #aptitudes h2 span {
+  #aptitudes-container h2 span, #habilidades-container h2 span {
     color: #1cbfdf;
     font-family: "Fragment";
     font-style: italic;
@@ -1370,6 +1369,47 @@ main a {
   #webd {
     padding: 30px 20px;
     border-top: 1px solid #535456;
+  }
+  #experience-section {
+    padding: 20px 10px;
+    margin: auto;
+  }
+  #experience-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0;
+    color: #1cbfdf;
+    font-family: Fragment;
+    font-style: italic;
+  }
+  #experiencia {
+    margin: auto;
+  }
+  #experiencia .company h3 {
+    font-size: 20px;
+  }
+  #experiencia .company h3 span {
+    font-size: 24px;
+  }
+  .experience-container {
+    margin: auto;
+    padding: 15px 10px;
+  }
+  .experience-container img {
+    display: none;
+  }
+  .experience-container p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .experience-container .right-experience {
+    margin: 10px 10px;
+  }
+  .experience-container .right-experience h4 {
+    font-size: 18px;
+  }
+  .experience-container .right-experience a {
+    font-size: 18px;
   }
   #habilidades {
     margin: auto;
@@ -1567,7 +1607,7 @@ main a {
   }
   /* Sección Derecha */
   /* About-Educación */
-  #education-section {
+  .education-section, #experience-section {
     padding: 20px 0;
     margin: auto;
   }
@@ -1628,6 +1668,52 @@ main a {
     justify-content: space-between;
     padding: 30px 20px;
     border-top: 1px solid #535456;
+  }
+  #experience-section {
+    padding: 20px 0;
+    margin: auto;
+  }
+  #experience-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0;
+    color: #1cbfdf;
+    font-family: Fragment;
+    font-style: italic;
+  }
+  #experiencia {
+    margin: auto;
+  }
+  #experiencia .company h3 {
+    font-size: 16px;
+  }
+  #experiencia .company h3 span {
+    font-size: 24px;
+  }
+  .experience-container {
+    margin: auto;
+    padding: 15px 10px;
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .experience-container img {
+    display: none;
+  }
+  .experience-container p {
+    font-size: 14px;
+    margin: 10px 10px;
+  }
+  .experience-container .right-experience {
+    width: 100%;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+  .experience-container .right-experience h4 {
+    font-size: 18px;
+  }
+  .experience-container .right-experience a {
+    font-size: 14px;
   }
   #contacto-container h1 {
     font-size: 24px;

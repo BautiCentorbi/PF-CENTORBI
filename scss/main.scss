@@ -114,7 +114,7 @@ main a{
     font-size: 2rem;
     font-weight: 200;
         .typing-title {
-            @include typing-animation(4s, 20);
+            @include typing-animation(2s, 20);
         }
         span {
             color: $primary-color;
@@ -513,7 +513,7 @@ main a{
     font-size: 2rem;
     font-weight: 200;
         .typing-title {
-            @include typing-animation(4s, 30);
+            @include typing-animation(3s, 30);
         }
         span {
             color: $primary-color;
@@ -683,7 +683,6 @@ main a{
     display: flex !important;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
     margin: 0;
     padding: 30px 20px;
     border-top: 1px solid $cards-color;
@@ -701,7 +700,7 @@ main a{
             margin: 20px 40px;
             width: max-content;
             text-align: right;
-            h3 {
+            h4 {
                 font-size: 24px;
             }
             a {
