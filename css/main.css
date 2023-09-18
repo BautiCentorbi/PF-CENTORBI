@@ -112,6 +112,7 @@ main a {
 }
 #descripciones .typing-title span {
   display: inline-block !important;
+  font-family: monospace;
   overflow: hidden;
   border-right: 0.15em solid #fff;
   white-space: nowrap;
@@ -553,6 +554,7 @@ main a {
 }
 #descripciones-about .typing-title span {
   display: inline-block !important;
+  font-family: monospace;
   overflow: hidden;
   border-right: 0.15em solid #fff;
   white-space: nowrap;
@@ -670,24 +672,27 @@ main a {
 
 /* Sección Derecha */
 /* About-Educación */
-.education-section {
+.education-section, #experience-section {
   max-width: 1500px;
   padding: 40px 0;
   margin: auto;
 }
-.education-section h2 {
+.education-section h2, #experience-section h2 {
   font-size: 38px;
   font-weight: bold;
   margin: 40px 0;
+  color: #1cbfdf;
+  font-family: Fragment;
+  font-style: italic;
 }
 
 #educacion {
   width: 100%;
 }
-#educacion .left-education h4 {
+#educacion .left-education h3 {
   font-weight: normal;
 }
-#educacion .left-education h4 span {
+#educacion .left-education h3 span {
   font-weight: bold;
   font-size: 20px;
 }
@@ -731,6 +736,57 @@ main a {
   justify-content: space-between;
   padding: 30px 20px;
   border-top: 1px solid #535456;
+}
+
+#experiencia {
+  width: 100%;
+}
+#experiencia .company h3 {
+  font-size: 24px;
+}
+#experiencia .company h3 span {
+  font-weight: bold;
+  font-size: 36px;
+  font-style: normal;
+}
+
+.experience-container {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding: 30px 20px;
+  border-top: 1px solid #535456;
+}
+.experience-container img {
+  width: 200px;
+  height: auto;
+  margin: 20px 40px;
+}
+.experience-container p {
+  margin: 20px 40px;
+  font-size: 20px;
+}
+.experience-container .right-experience {
+  flex-shrink: 0;
+  margin: 20px 40px;
+  width: max-content;
+  text-align: right;
+}
+.experience-container .right-experience h3 {
+  font-size: 24px;
+}
+.experience-container .right-experience a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.experience-container .right-experience a:hover {
+  color: #1cbfdf;
 }
 
 /* Habilidades Page */
