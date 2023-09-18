@@ -95,10 +95,26 @@ main {
 main a{
     text-decoration: none;
 }
+@mixin typing-animation ($seconds, $steps) {
+    white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+            span {
+                display: inline-block !important;
+                overflow: hidden;
+                border-right: .15em solid #fff;
+                white-space: nowrap;
+                animation: typing $seconds steps($steps, end), blink-caret 0.75s step-end infinite;
+            }
+}
 #descripciones {
     padding: 6rem;
     font-size: 2rem;
     font-weight: 200;
+        .typing-title {
+            @include typing-animation(4s, 20);
+        }
         span {
             color: $primary-color;
             font-size: 4rem;
@@ -109,6 +125,22 @@ main a{
             color: #ffffff;
             font-size: 2rem;
         } 
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
 }
 .logos-container {
     display: flex;
@@ -212,6 +244,7 @@ main a{
 }
 #a-link-projects {
     transition: all 0.3s ease;
+    width: fit-content;
         img {
         width: 328px;
         }
@@ -221,14 +254,6 @@ main a{
 }
 
 /* Portfolio Page */
-
-#last-project {
-    display: block;
-    #figma-prototype{
-        width: 360px;
-        height: 800px;
-    }
-}
 
 #last-project-container {
     text-align: center;
@@ -245,7 +270,7 @@ main a{
         #behance-qr {
             display: flex !important;
             align-items: center !important;
-            justify-content: left !important;
+            justify-content: center !important;
             h2 {
                 @include enhaced-title(#fff, 32px);
             span {
@@ -486,6 +511,9 @@ main a{
     padding: 6rem;
     font-size: 2rem;
     font-weight: 200;
+        .typing-title {
+            @include typing-animation(4s, 30);
+        }
         span {
             color: $primary-color;
             font-size: 4rem;
@@ -493,7 +521,7 @@ main a{
             font-family: "Fragment";
         }
 }
-.education-btn button {
+.contact-btn button {
     @include botones (#fff, #000, 1rem, solid, #fff);
         &:hover {
             background-color: $bg-color;
@@ -503,7 +531,7 @@ main a{
             font-weight: bold;
         }
 }
-.contact-btn button {
+.education-btn button {
     @include botones ($bg-color, #9d9d9d, 1rem, solid, #9d9d9d);
         &:hover {
             background-color: $bg-color;
@@ -663,6 +691,7 @@ main a{
             margin-bottom: 25px;
             color: #bbb;
             text-align: center;
+            font-size: 20px;
         }
         ul {
             padding: 25px 0;
@@ -694,7 +723,7 @@ main a{
         }
 }
 
-/* md-Desktop */
+/* Desktop-MD */
 
 @media (min-width: 1024px) and (max-width: 1599px) {
     @import "./media-querys/desktop-md";
