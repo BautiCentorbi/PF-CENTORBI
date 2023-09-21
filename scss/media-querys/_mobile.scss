@@ -61,10 +61,12 @@
     margin: auto;
     padding: 0;
     display: flex !important;
+    justify-content: center;
 }
 #a-link-projects {
     display: flex;
     justify-content: center;
+    margin: auto;
         img {
             width: 260px;
             justify-content: center;

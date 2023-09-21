@@ -688,6 +688,7 @@ main a {
 
 #educacion {
   width: 100%;
+  margin: auto;
 }
 #educacion .left-education h3 {
   font-weight: normal;
@@ -1509,10 +1510,12 @@ main a {
     margin: auto;
     padding: 0;
     display: flex !important;
+    justify-content: center;
   }
   #a-link-projects {
     display: flex;
     justify-content: center;
+    margin: auto;
   }
   #a-link-projects img {
     width: 260px;
